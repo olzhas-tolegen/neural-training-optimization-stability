@@ -1,0 +1,101 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+.conda/
+conda-meta/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# Logs/temp
+*.log
+*.tmp
+*.bak
+*.out
+*.err
+
+# Raw and processed data
+data/raw/*
+!data/raw/.gitkeep
+!data/raw/covertype/
+data/raw/covertype/*
+!data/raw/covertype/.gitkeep
+
+data/processed/*
+!data/processed/.gitkeep
+
+# Results
+results/metrics/*
+!results/metrics/.gitkeep
+
+results/runtime/*
+!results/runtime/.gitkeep
+
+results/model-comparison/*
+!results/model-comparison/.gitkeep
+
+results/confusion-matrices/*
+!results/confusion-matrices/.gitkeep
+
+# Figures
+figures/eda/*
+!figures/eda/.gitkeep
+
+figures/learning-curves/*
+!figures/learning-curves/.gitkeep
+
+figures/model-complexity-curves/*
+!figures/model-complexity-curves/.gitkeep
+
+figures/confusion-matrices/*
+!figures/confusion-matrices/.gitkeep
+
+figures/runtime/*
+!figures/runtime/.gitkeep
+
+# Model artifacts
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.onnx
+*.h5
+*.ckpt
+
+# Large generated files
+*.parquet
+*.feather
+*.npy
+*.npz
+*.csv
+!reports/*.csv
+
+# Keep required files
+!.gitignore
+!README.md
+!environment.yml
+!requirements.txt
+!reproducibility.md
+!notebooks/*.ipynb
+!src/**/*.py
+!scripts/*.sh
+!reports/*.md
+!reports/.gitkeep
+!**/.gitkeep

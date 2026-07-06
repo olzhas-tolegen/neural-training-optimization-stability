@@ -1,0 +1,15 @@
+{
+  "algorithm": "RHC",
+  "final_linear_layers": 1,
+  "part1_function_evaluation_budget": 300,
+  "selection_rule": "lowest median full-validation loss; Macro-F1 tie-break",
+  "settings": {
+    "initial_step": 0.025,
+    "min_step": 0.002,
+    "restart_patience": 50,
+    "restart_scale": 0.05,
+    "step_decay": 0.995
+  },
+  "trainable_parameter_count": 455,
+  "validation_subset_rows": 2000
+}

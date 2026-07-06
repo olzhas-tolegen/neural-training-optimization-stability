@@ -1,0 +1,57 @@
+{
+  "adam": {
+    "batch_size": 512,
+    "beta1": 0.9,
+    "beta2": 0.99,
+    "lr": 0.003,
+    "main_update_budget": 1600,
+    "optimizer_name": "adam",
+    "selection_rule": "coarse validation heatmaps; lowest validation loss with Macro-F1 tie-break"
+  },
+  "data_paths": {
+    "development": "output_data/eda_dataset_original/dataset_stratified.csv",
+    "test": "output_data/eda_dataset_original/dataset_remainder.csv"
+  },
+  "device": "cpu",
+  "regularization": {
+    "batch_size": 512,
+    "best_single_regularizer": "L2 weight decay",
+    "best_single_value": 0.0001,
+    "dropout": 0.1,
+    "early_stopping_patience": null,
+    "input_noise_std": 0.0,
+    "label_smoothing": 0.0,
+    "locked_dropout_after_interaction_trials": 0.15000000000000002,
+    "max_updates": 1600,
+    "name": "wd+dropout",
+    "optimizer": {
+      "beta1": 0.9,
+      "beta2": 0.99,
+      "lr": 0.003,
+      "name": "adam"
+    },
+    "selection_rule": "median validation Macro-F1; validation loss tie-break",
+    "weight_decay": 0.0001
+  },
+  "ro": {
+    "algorithm": "RHC",
+    "final_linear_layers": 1,
+    "part1_function_evaluation_budget": 300,
+    "part4_function_evaluation_budget": 30,
+    "selection_rule": "lowest median full-validation loss; Macro-F1 tie-break",
+    "settings": {
+      "initial_step": 0.025,
+      "min_step": 0.002,
+      "restart_patience": 50,
+      "restart_scale": 0.05,
+      "step_decay": 0.995
+    },
+    "trainable_parameter_count": 455,
+    "validation_subset_rows": 2000
+  },
+  "seeds": [
+    42,
+    202,
+    7641
+  ]
+}

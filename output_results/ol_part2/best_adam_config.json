@@ -1,0 +1,9 @@
+{
+  "batch_size": 512,
+  "beta1": 0.9,
+  "beta2": 0.99,
+  "lr": 0.003,
+  "main_update_budget": 1600,
+  "optimizer_name": "adam",
+  "selection_rule": "coarse validation heatmaps; lowest validation loss with Macro-F1 tie-break"
+}

@@ -1,0 +1,6 @@
+{
+  "condition": "Adam no bias correction",
+  "loss_threshold": 0.5997762233018875,
+  "main_update_budget": 1600,
+  "selected_lr": 0.003
+}

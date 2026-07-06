@@ -1,0 +1,28 @@
+{
+  "final_linear_layers": 1,
+  "ro_function_evaluation_budget": 300,
+  "settings": {
+    "GA": {
+      "crossover_blend": 0.25,
+      "elite_count": 2,
+      "mutation_rate": 0.05,
+      "mutation_scale": 0.02,
+      "population_size": 20,
+      "tournament_size": 3
+    },
+    "RHC": {
+      "initial_step": 0.025,
+      "min_step": 0.002,
+      "restart_patience": 50,
+      "restart_scale": 0.05,
+      "step_decay": 0.995
+    },
+    "SA": {
+      "decay": 0.985,
+      "initial_step": 0.025,
+      "initial_temperature": 0.1,
+      "min_step": 0.0015
+    }
+  },
+  "validation_subset_rows": 2000
+}

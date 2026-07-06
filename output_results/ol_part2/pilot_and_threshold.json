@@ -1,0 +1,42 @@
+{
+  "best_lr_by_condition": [
+    {
+      "best_val_loss": 0.6025731563568115,
+      "condition": "Adam",
+      "lr": 0.003
+    },
+    {
+      "best_val_loss": 0.6118493676185608,
+      "condition": "Adam beta1=0",
+      "lr": 0.003
+    },
+    {
+      "best_val_loss": 0.5712154507637024,
+      "condition": "Adam no bias correction",
+      "lr": 0.003
+    },
+    {
+      "best_val_loss": 0.5980010032653809,
+      "condition": "AdamW",
+      "lr": 0.003
+    },
+    {
+      "best_val_loss": 0.6071776747703552,
+      "condition": "Nesterov momentum",
+      "lr": 0.05
+    },
+    {
+      "best_val_loss": 0.6121036410331726,
+      "condition": "SGD momentum",
+      "lr": 0.05
+    },
+    {
+      "best_val_loss": 0.7169789671897888,
+      "condition": "SGD no momentum",
+      "lr": 0.1
+    }
+  ],
+  "loss_threshold": 0.5997762233018875,
+  "selection_rule": "lowest pilot validation loss; Macro-F1 tie-break",
+  "tune_updates": 640
+}

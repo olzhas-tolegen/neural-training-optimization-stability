@@ -1,0 +1,19 @@
+{
+  "batch_size": 512,
+  "best_single_regularizer": "L2 weight decay",
+  "best_single_value": 0.0001,
+  "dropout": 0.1,
+  "early_stopping_patience": null,
+  "input_noise_std": 0.0,
+  "label_smoothing": 0.0,
+  "max_updates": 1600,
+  "name": "wd+dropout",
+  "optimizer": {
+    "beta1": 0.9,
+    "beta2": 0.99,
+    "lr": 0.003,
+    "name": "adam"
+  },
+  "selection_rule": "median validation Macro-F1; validation loss tie-break",
+  "weight_decay": 0.0001
+}
